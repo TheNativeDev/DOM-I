@@ -40,3 +40,27 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// HEADER
+let navigation = document.querySelectorAll('a');
+for (let i = 0; i < navigation.length; i++) {
+  navigation[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
+  navigation[i].style.color = 'green';
+}
+
+let newLink1 = document.createElement('a');
+newLink1.href = '#';
+newLink1.textContent = 'New One';
+newLink1.style.color = 'green';
+
+let newLink2 = document.createElement('a');
+newLink2.href = '#';
+newLink2.textContent = 'New Two';
+newLink2.style.color = 'green';
+
+let nav = document.querySelector('nav');
+nav.appendChild(newLink2);
+nav.prepend(newLink1);
+
+
+
