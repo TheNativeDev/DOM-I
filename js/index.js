@@ -62,5 +62,32 @@ let nav = document.querySelector('nav');
 nav.appendChild(newLink2);
 nav.prepend(newLink1);
 
+// BANNER
+let ctaH1 = document.querySelector('.cta-text h1');
+ctaH1.textContent = siteContent['cta']['h1'];
+
+let ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent['cta']['button'];
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+// TOP CONTENT
+let tc1H1 = document.querySelector('.text-content h4');
+tc1H1.textContent = siteContent['main-content']['features-h4'];
+
+let tc1p = document.querySelector('.text-content p');
+tc1p.textContent = siteContent['main-content']['features-content'];
+
+let tc2H1 = document.querySelector('.text-content:nth-child(2) h4');
+tc2H1.textContent = siteContent['main-content']['about-h4'];
+
+let tc2p = document.querySelector('.text-content:nth-child(2) p');
+tc2p.textContent = siteContent['main-content']['about-content'];
+
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+
 
 
