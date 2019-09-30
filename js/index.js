@@ -118,4 +118,7 @@ for (let i = 0; i < contactP.length; i++) {
   contactP[2].textContent = siteContent['contact']['email'];
 }
 
+// FOOTER
+let footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
 
