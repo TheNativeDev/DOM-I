@@ -88,6 +88,34 @@ tc2p.textContent = siteContent['main-content']['about-content'];
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
+// BOTTOM CONTENT
+let bc1H1 = document.querySelector('.bottom-content .text-content h4');
+bc1H1.textContent = siteContent['main-content']['services-h4'];
 
+let bc1p = document.querySelector('.bottom-content .text-content p');
+bc1p.textContent = siteContent['main-content']['services-content'];
+
+let bc2H1 = document.querySelector('.bottom-content .text-content:nth-child(2) h4');
+bc2H1.textContent = siteContent['main-content']['product-h4'];
+
+let bc2p = document.querySelector('.bottom-content .text-content:nth-child(2) p');
+bc2p.textContent = siteContent['main-content']['product-content'];
+
+let bc3H1 = document.querySelector('.bottom-content .text-content:nth-child(3) h4');
+bc3H1.textContent = siteContent['main-content']['vision-h4'];
+
+let bc3p = document.querySelector('.bottom-content .text-content:nth-child(3) p');
+bc3p.textContent = siteContent['main-content']['vision-content'];
+
+// CONTACT
+let contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+
+let contactP = document.querySelectorAll('.contact p');
+for (let i = 0; i < contactP.length; i++) {
+  contactP[0].textContent = siteContent['contact']['address'];
+  contactP[1].textContent = siteContent['contact']['phone'];
+  contactP[2].textContent = siteContent['contact']['email'];
+}
 
 
